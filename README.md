@@ -1,25 +1,25 @@
 # FileW2M
 
-A cross-platform LAN file transfer application supporting Windows and Android.
+跨平台局域网文件传输应用，支持 Windows 和 Android。
 
-## Features
+## 功能特性
 
-- **Device Discovery**: Automatic UDP broadcast scanning for nearby devices
-- **File Transfer**: Send and receive files over TCP connection
-- **Messaging**: Real-time text messaging between connected devices
-- **Connection Management**: Request/approve connection system with auto-approve option
-- **Transfer History**: View and manage file transfer records
-- **Background Service**: Android foreground service to maintain connections
-- **System Notifications**: In-app and system notifications for messages
-- **Device History**: Save connection history for quick reconnection
-- **Manual Connection**: Connect to devices by IP address when auto-discovery fails
+- **设备发现**：通过 UDP 广播自动扫描局域网设备
+- **文件传输**：通过 TCP 连接发送和接收文件
+- **消息聊天**：已连接设备间实时文字消息
+- **连接管理**：请求/审批连接机制，支持自动同意
+- **传输历史**：查看和管理文件传输记录
+- **后台服务**：Android 前台服务保持连接
+- **系统通知**：应用内 + 系统级消息通知
+- **设备历史**：保存连接历史，支持快速重连
+- **手动连接**：自动发现失败时可通过 IP 地址手动连接
 
-## Requirements
+## 系统要求
 
-- Windows 10+ or Android 8.0+
-- Both devices must be on the same local network
+- Windows 10+ 或 Android 8.0+
+- 两台设备需在同一局域网
 
-## Build
+## 构建
 
 ### Windows
 
@@ -27,7 +27,7 @@ A cross-platform LAN file transfer application supporting Windows and Android.
 flutter build windows
 ```
 
-The executable will be at `build/windows/x64/runner/Release/FileW2M.exe`.
+可执行文件位于 `build/windows/x64/runner/Release/FileW2M.exe`。
 
 ### Android
 
@@ -35,24 +35,24 @@ The executable will be at `build/windows/x64/runner/Release/FileW2M.exe`.
 flutter build apk
 ```
 
-The APK will be at `build/app/outputs/flutter-apk/app-release.apk`.
+APK 位于 `build/app/outputs/flutter-apk/app-release.apk`。
 
-## Download
+## 下载
 
-Pre-built binaries are available in the [Releases](https://github.com/StarryFirefly-Armillary/FileW2M/releases) section.
+预编译版本请访问 [Releases](https://github.com/StarryFirefly-Armillary/FileW2M/releases) 页面。
 
-## Tech Stack
+## 技术栈
 
 - Flutter 3.44.0
 - Dart 3.12.0
-- Provider for state management
-- UDP broadcast for device discovery
-- TCP sockets for file transfer and messaging
+- Provider 状态管理
+- UDP 广播设备发现
+- TCP 套接字文件传输和消息通信
 
-## License
+## 许可证
 
-MIT License - see [LICENSE](LICENSE) for details.
+MIT 许可证 - 详见 [LICENSE](LICENSE)。
 
-## Author
+## 作者
 
 - **StarryFirefly** - [GitHub](https://github.com/StarryFirefly-Armillary)
