@@ -1,0 +1,6 @@
+{
+  "enabledMcpjsonServers": [
+    "baidu-search"
+  ],
+  "enableAllProjectMcpServers": true
+}
