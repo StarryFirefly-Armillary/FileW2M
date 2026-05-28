@@ -1,0 +1,32 @@
+name: file_transfer
+description: LAN file transfer app for Windows and Android
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.1
+  file_picker: ^8.0.0
+  crypto: ^3.0.3
+  path_provider: ^2.1.1
+  permission_handler: ^11.1.0
+  shared_preferences: ^2.2.2
+  uuid: ^4.2.1
+  url_launcher: ^6.3.1
+  open_file: ^3.3.2
+  flutter_local_notifications: ^18.0.1
+
+dependency_overrides:
+  flutter_plugin_android_lifecycle: 2.0.22
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
