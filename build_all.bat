@@ -52,6 +52,9 @@ if !errorlevel! equ 0 (
     if exist "build\windows\x64\runner\Release" (
         if exist "%OUTPUT_DIR%\windows" rmdir /s /q "%OUTPUT_DIR%\windows"
         xcopy "build\windows\x64\runner\Release" "%OUTPUT_DIR%\windows\" /e /i /q >nul
+        if exist "build\windows\app.so" (
+            copy "build\windows\app.so" "%OUTPUT_DIR%\windows\data\app.so" >nul
+        )
         echo [✓] EXE 构建成功: %OUTPUT_DIR%\windows\
         echo [i] 可执行文件: %OUTPUT_DIR%\windows\file_transfer.exe
     ) else (

@@ -89,14 +89,15 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.star" "\0"
-            VALUE "FileDescription", "FileW2M" "\0"
+            VALUE "CompanyName", "StarryFirefly" "\0"
+            VALUE "FileDescription", "FileW2M - LAN File Transfer" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
             VALUE "InternalName", "FileW2M" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2026 com.star. All rights reserved." "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2026 StarryFirefly. All rights reserved." "\0"
             VALUE "OriginalFilename", "FileW2M.exe" "\0"
             VALUE "ProductName", "FileW2M" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
+            VALUE "Comments", "https://github.com/StarryFirefly-Armillary/FileW2M" "\0"
         END
     END
     BLOCK "VarFileInfo"

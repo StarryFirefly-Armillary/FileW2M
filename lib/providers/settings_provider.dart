@@ -45,16 +45,16 @@ class SettingsProvider extends ChangeNotifier {
   Future<String> _getDefaultSavePath() async {
     try {
       if (Platform.isWindows) {
-        // Use Downloads folder on Windows
         final home = Platform.environment['USERPROFILE'] ?? '';
         if (home.isNotEmpty) {
-          final downloads = '$home${Platform.pathSeparator}Downloads${Platform.pathSeparator}FileTransfer';
-          return downloads;
+          return '$home${Platform.pathSeparator}Downloads${Platform.pathSeparator}FileW2M';
         }
       }
-      // Fallback: use app documents directory
+      if (Platform.isAndroid) {
+        return '/storage/emulated/0/Download/FileW2M';
+      }
       final dir = await getApplicationDocumentsDirectory();
-      return '${dir.path}${Platform.pathSeparator}FileTransfer';
+      return '${dir.path}${Platform.pathSeparator}FileW2M';
     } catch (e) {
       return '${Directory.current.path}${Platform.pathSeparator}received';
     }
